@@ -1,0 +1,16 @@
+@import "../../../scss/style.scss";
+.header {
+  &__wrapper {
+    padding: 10px 30px;
+  }
+  &__logo {
+    img {
+      width: 70px;
+      height: 70px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

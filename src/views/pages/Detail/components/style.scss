@@ -1,0 +1,171 @@
+@import "../../../../scss/style.scss";
+
+//background color by types
+.detail__pokemon {
+  &--fire {
+    background-color: #fddfdf;
+  }
+  &--grass {
+    background-color: #defde0;
+  }
+  &--electric {
+    background-color: #fcf7de;
+  }
+  &--water {
+    background-color: #def3fd;
+  }
+  &--ground {
+    background-color: #f4e7da;
+  }
+  &--rock {
+    background-color: #d5d5d4;
+  }
+  &--fairy {
+    background-color: #fceaff;
+  }
+  &--poison {
+    background-color: #98d7a5;
+  }
+  &--bug {
+    background-color: #f8d5a3;
+  }
+  &--dragon {
+    background-color: #97b3e6;
+  }
+  &--psychic {
+    background-color: #eaeda1;
+  }
+  &--flying {
+    background-color: #f5f5f5;
+  }
+  &--fighting {
+    background-color: #e6e0d4;
+  }
+  &--normal {
+    background-color: #f5f5f5;
+  }
+  &--dark {
+    background-color: #616163;
+  }
+  &--ghost {
+    background-color: #8a2be2;
+  }
+  &--ice {
+    background-color: #78c2f7;
+  }
+  &--steel {
+    background-color: #989997 !important;
+  }
+}
+
+.detail__fullscreen {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.detail__pokemon {
+  &--name {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: translate(-5%);
+    h3 {
+      font-size: 3.2rem;
+      span {
+        &:last-child {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  &--info {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translate(-7%, -50%);
+    p {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.5;
+      span {
+        margin-left: 5px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  &--image {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -50%);
+  }
+  &--content {
+    position: absolute;
+    top: 50%;
+    right: 7%;
+  }
+  &--types {
+    display: flex;
+    align-items: center;
+    p {
+      padding: 5px 10px;
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-right: 5px;
+      border-radius: 10px;
+    }
+  }
+  &--base {
+    max-width: 400px;
+    margin-top: 15px;
+    span {
+      display: inline-block;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #000;
+      padding: 2.5px 5px;
+      background: #fff;
+      border-radius: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+    .is-base {
+      position: relative;
+      padding-left: 15px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: rgba(#000, 0.1);
+        border-radius: 5px;
+      }
+    }
+  }
+  &--image-child {
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(#000, 0.2);
+    @include flexcenter;
+    margin-right: 10px;
+    img {
+      width: 70%;
+      height: 70%;
+      object-fit: cover;
+    }
+  }
+}
+
+.istitle {
+  margin-top: 15px;
+  font-size: 3.8rem;
+  font-weight: 700;
+}

@@ -1,0 +1,67 @@
+@import "../../../../../scss/style.scss";
+
+.row {
+  @include row(-5px);
+}
+
+.col {
+  @include col(calc(100% / 6), 5px);
+}
+
+.poke {
+  margin-top: 40px;
+  &__item {
+    padding: 30px 0;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px 0 rgba(#000, 0.1);
+    @include flexcenter;
+    flex-direction: column;
+    &--image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #fff;
+      @include flexcenter;
+      img {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+      }
+    }
+    &--id {
+      margin-top: 20px;
+      h4 {
+        font-size: 2.4rem;
+        color: rgba(#000, 0.7);
+      }
+    }
+    &--name {
+      margin-top: 10px;
+      height: 38px;
+      text-align: center;
+      h3 {
+        font-size: 1.6rem;
+        text-transform: capitalize;
+      }
+    }
+    &--types {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+  }
+}
+.istype {
+  margin-right: 5px;
+  padding: 2.5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  p {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+}

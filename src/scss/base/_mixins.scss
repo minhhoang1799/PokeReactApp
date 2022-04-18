@@ -1,0 +1,19 @@
+@mixin row($mar) {
+  margin: 0 $mar; // 0 $mar
+  &::after {
+    content: "";
+    flex: 1;
+  }
+}
+
+@mixin col($col, $pad) {
+  flex: 0 0 $col;
+  max-width: $col;
+  padding: 0 $pad;
+}
+
+@mixin flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

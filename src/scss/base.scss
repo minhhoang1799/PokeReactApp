@@ -2,3 +2,7 @@
 @import "./base/extendables";
 @import "./base/mixins";
 @import "./base/variables";
+
+.container {
+  margin: 0 auto;
+}

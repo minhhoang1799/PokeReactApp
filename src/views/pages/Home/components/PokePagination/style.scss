@@ -1,0 +1,42 @@
+@import "../../../../../scss/style.scss";
+
+.poke__pagination {
+  margin-top: 30px;
+}
+.hidden {
+  display: none;
+}
+
+.MuiPagination-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MuiPagination-ul {
+  li {
+    button {
+      font-size: 1.4rem;
+      svg {
+        font-size: 2.4rem !important;
+      }
+      &.Mui-disabled {
+        opacity: 0 !important;
+      }
+    }
+  }
+}
+.MuiPaginationItem-root {
+  width: 35px;
+  height: 35px !important;
+}
+.MuiPaginationItem-page {
+  &.Mui-selected {
+    background-color: $fire !important;
+    color: #fff;
+  }
+  &:hover {
+    background-color: rgba($fire, 0.7) !important;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+  }
+}
